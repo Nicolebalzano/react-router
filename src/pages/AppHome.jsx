@@ -1,6 +1,8 @@
 const AppHome = () => {
 return (
-    <h1>Benvenuti nel nostro sito</h1>
+   <main>
+    <h1>Home</h1>
+   </main>
 )
 }
 export default AppHome
