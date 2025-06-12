@@ -11,7 +11,7 @@ useEffect(() => {
 }, [])
 return (
     <>
-<h1 className='text-center my-4'>Dai uno sguardo ai nostri ultimi posts</h1>
+<h1 className='text-center my-4 summery-title bg-image'>Dai uno sguardo ai nostri ultimi posts</h1>
 <div className="container">
     <div className="row">
    {datiPost.map((curPost, index) => (
