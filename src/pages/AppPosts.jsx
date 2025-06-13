@@ -2,7 +2,7 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 
 const AppPosts = () => {
-    const apiUrl = "https://67c5b4f3351c081993fb1ab6.mockapi.io/api/posts";
+    const apiUrl = "https://67c5b4f3351c081993fb1ab6.mockapi.io/api/posts?page=1&&limit=21";
   const [datiPost, setDatiPost] = useState([])
 useEffect(() => {
   axios.get(apiUrl).then((resp) => {
