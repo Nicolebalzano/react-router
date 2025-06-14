@@ -15,6 +15,9 @@ return (
          <li className="nav-item">
           <NavLink className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} aria-current="page" to="/about">About Us</NavLink>
         </li>
+          <li className="nav-item">
+          <NavLink className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} aria-current="page" to="/create">Crea un post</NavLink>
+        </li>
       </ul>
      
     </div>
