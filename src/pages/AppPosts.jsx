@@ -1,7 +1,6 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
-import ShowPost from "../components/ShowPost"
 
 const AppPosts = () => {
   const navigate = useNavigate();
@@ -19,7 +18,7 @@ return (
     <div className="row">
    {datiPost.map((curPost, index) => (
   <div className="card my-3 col-3 p-3 m-2 ms-auto" key={index}>
-     {datiPost && <a onClick={() => navigate()} className="mb-2 btn btn-primary">Dettagli post</a>}
+     {datiPost && <a onClick={() => navigate(`/post/${curPost.id}`)} className="mb-2 btn btn-primary">Dettagli post</a>}
   <div className="card-body">
     <h3 className="card-title">{curPost.title}</h3>
     <h6 className="card-subtitle mb-2 text-body-secondary">{curPost.author}</h6>
